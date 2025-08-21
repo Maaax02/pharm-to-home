@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body
+    class="flex flex-col justify-between bg-gradient-to-b from-white to-gray-100 min-h-screen text-gray-800"
+  >
+    <!-- HEADER -->
+    <header class="flex items-center justify-between p-6 shadow-md bg-white">
+      <div class="flex items-center space-x-3">
+        <!-- Logo -->
+        <div
+          class="w-20 rounded-full bg-gradient-to-r from-green-500 to-blue-500 flex items-center justify-center animate-bounce"
+        >
+          <img src="img/logo.jpg" alt="logo" class="rounded-full" />
+        </div>
+        <h1 class="text-2xl font-bold text-green-600">Farmacia a Casa Tua</h1>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="flex-grow">
+      <!-- HERO -->
+      <section class="text-center py-12 px-6">
+        <h2 class="text-3xl font-bold mb-4 mb-6">
+          Servizio di Delivery per Medicinali
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+          Ordina comodamente i tuoi farmaci, noi li porteremo direttamente a
+          casa tua! Per le ricette? Nessun problema! Puoi mandarcele via
+          <strong>Email</strong> o <strong>WhatsApp</strong>.
+        </p>
+
+        <!-- BOTTONI -->
+        <div
+          class="mt-6 flex flex-col md:flex-row items-center justify-center gap-4"
+        >
+          <!-- Bottone Email -->
+          <a
+            href="mailto:pharmtohome.18@gmail.com?subject=Richiesta%20Consegna%20Farmaci"
+            class="px-8 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-green-500 to-blue-600 shadow-lg transition transform hover:scale-105 hover:shadow-2xl"
+          >
+            Prenota via Email 📧
+          </a>
+
+          <!-- Bottone WhatsApp -->
+          <a
+            href="https://wa.me/393333333333?text=Ciao!%20Vorrei%20ordinare%20dei%20farmaci%20a%20domicilio."
+            target="_blank"
+            class="px-8 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-green-400 to-green-600 shadow-lg transition transform hover:scale-105 hover:shadow-2xl"
+          >
+            Contatta via WhatsApp 💬
+          </a>
+        </div>
+      </section>
+
+      <!-- INFO -->
+      <section class="grid md:grid-cols-2 gap-8 px-6 py-12 max-w-5xl mx-auto">
+        <!-- Servizio Diurno -->
+        <div
+          class="bg-white shadow-lg rounded-2xl p-6 border-t-4 border-orange-500"
+        >
+          <h3 class="text-xl font-bold text-orange-600 mb-2">
+            Servizio Diurno
+          </h3>
+          <p class="text-gray-600">
+            Tutti i giorni dalle <strong>9:00</strong> alle
+            <strong>20:30</strong>
+          </p>
+          <p class="mt-3 text-lg font-semibold text-orange-600">
+            Consegna a partire da €2,99
+          </p>
+        </div>
+
+        <!-- Servizio Notturno -->
+        <div
+          class="bg-white shadow-lg rounded-2xl p-6 border-t-4 border-indigo-600"
+        >
+          <h3 class="text-xl font-bold text-indigo-600 mb-2">
+            Servizio Notturno
+          </h3>
+          <p class="text-gray-600">
+            Tutti i giorni dalle <strong>22:00</strong> alle
+            <strong>00:30</strong>
+          </p>
+          <p class="mt-3 text-lg font-semibold text-indigo-600">
+            Consegna a partire da €3,99
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-8 bg-white shadow-inner">
+      <p class="mb-2 text-gray-700">
+        📱 Cell:
+        <a href="tel:3333333333" class="text-green-600 font-semibold">
+          3333333333
+        </a>
+      </p>
+      <p class="mb-2 text-gray-700">
+        📧 Email:
+        <a
+          href="mailto:pharmtohome.18@gmail.com"
+          class="text-green-600 font-semibold"
+        >
+          pharmtohome.18@gmail.com
+        </a>
+      </p>
+      <p class="text-gray-500 text-sm">© 2025 Farmacia a Casa Tua</p>
+    </footer>
+
+    <!-- Animazioni personalizzate -->
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 1s ease-out;
+      }
+    </style>
+  </body>
+</html>
